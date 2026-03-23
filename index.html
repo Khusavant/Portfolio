@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khush — AI-focused developer building intelligent web applications. Explore projects in machine learning, NLP, and computer vision.">
+  <title>Khusavant | AI Developer Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">KHUSH.AI</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="mode-toggle" id="modeToggle">
+      <button class="mode-btn active" id="manualBtn" data-mode="manual">⚡ Manual</button>
+      <button class="mode-btn" id="aiBtn" data-mode="ai">🤖 AI Mode</button>
+      <div class="mode-toggle-slider" id="modeSlider"></div>
+    </div>
+
+    <div class="nav-hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Available for opportunities
+      </div>
+
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Khush</span><br>
+        I Build <span class="gradient-text">AI Systems</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Computer Science student specializing in Artificial Intelligence.
+        I craft intelligent web applications that solve real-world problems
+        using machine learning, NLP, and computer vision.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Explore Work</a>
+        <button class="btn btn-outline" id="heroTalkBtn">Talk to AI</button>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="section" id="about">
+    <div class="section-header reveal">
+      <span class="section-label">// About Me</span>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-image-wrapper reveal">
+        <div class="about-image" id="aboutImage" style="background: linear-gradient(135deg, rgba(0,240,255,0.1), rgba(168,85,247,0.1)); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+          🧑‍💻
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <h3>An AI-Focused Developer Who Builds <span class="gradient-text">Intelligent Applications</span></h3>
+        <p>
+          I'm a Computer Science student with a deep passion for Artificial Intelligence
+          and Machine Learning. I specialize in building systems that think, learn, and adapt —
+          from natural language processing pipelines to computer vision models.
+        </p>
+        <p>
+          My approach combines strong engineering principles with cutting-edge AI research
+          to create practical applications that make a real impact. I believe in writing
+          clean, modular code and building systems that are both intelligent and reliable.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">8+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">AI Models</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Years Coding</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ AI SUMMARY ═══════════ -->
+  <section class="section" id="ai-summary">
+    <div class="section-header reveal">
+      <span class="section-label">// AI Generated</span>
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="section-subtitle">A quick overview powered by KhushAI</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="ai-summary-card reveal">
+      <div class="summary-terminal-bar">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">khushai --summary</span>
+      </div>
+      <div class="summary-body">
+        <span class="summary-prompt">$</span>
+        <span class="summary-text" id="summaryText"></span>
+        <span class="summary-cursor">|</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS (SLIDER) ═══════════ -->
+  <section class="section projects-section" id="projects">
+    <div class="section-header reveal">
+      <span class="section-label">// Portfolio</span>
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-subtitle">A showcase of intelligent systems and AI-powered applications</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="slider-container reveal">
+      <button class="slider-arrow prev" id="sliderPrev" aria-label="Previous project">‹</button>
+      <div class="slider-track" id="sliderTrack">
+        <!-- Cards injected by slider.js -->
+      </div>
+      <button class="slider-arrow next" id="sliderNext" aria-label="Next project">›</button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section class="section" id="skills">
+    <div class="section-header reveal">
+      <span class="section-label">// Tech Stack</span>
+      <h2 class="section-title">Skills & Expertise</h2>
+      <p class="section-subtitle">Technologies I use to bring ideas to life</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="skill-map reveal">
+      <!-- Cluster: AI/ML -->
+      <div class="skill-cluster" data-cluster="ai">
+        <div class="cluster-header">
+          <span class="cluster-icon">🤖</span>
+          <h3 class="cluster-title">AI / ML</h3>
+        </div>
+        <div class="cluster-nodes">
+          <span class="skill-node">TensorFlow</span>
+          <span class="skill-node">PyTorch</span>
+          <span class="skill-node">scikit-learn</span>
+          <span class="skill-node">OpenCV</span>
+        </div>
+      </div>
+
+      <!-- Center Node -->
+      <div class="skill-center">
+        <div class="center-ring"></div>
+        <div class="center-label">Khusavant</div>
+        <div class="center-sub">Full-Stack AI Developer</div>
+      </div>
+
+      <!-- Cluster: Languages -->
+      <div class="skill-cluster" data-cluster="lang">
+        <div class="cluster-header">
+          <span class="cluster-icon">💻</span>
+          <h3 class="cluster-title">Languages</h3>
+        </div>
+        <div class="cluster-nodes">
+          <span class="skill-node">Python</span>
+          <span class="skill-node">JavaScript</span>
+          <span class="skill-node">C++</span>
+          <span class="skill-node">SQL</span>
+        </div>
+      </div>
+
+      <!-- Cluster: Web -->
+      <div class="skill-cluster" data-cluster="web">
+        <div class="cluster-header">
+          <span class="cluster-icon">🌐</span>
+          <h3 class="cluster-title">Web</h3>
+        </div>
+        <div class="cluster-nodes">
+          <span class="skill-node">Flask</span>
+          <span class="skill-node">FastAPI</span>
+          <span class="skill-node">React</span>
+          <span class="skill-node">Node.js</span>
+        </div>
+      </div>
+
+      <!-- Cluster: Tools -->
+      <div class="skill-cluster" data-cluster="tools">
+        <div class="cluster-header">
+          <span class="cluster-icon">🛠️</span>
+          <h3 class="cluster-title">DevOps & Tools</h3>
+        </div>
+        <div class="cluster-nodes">
+          <span class="skill-node">Git</span>
+          <span class="skill-node">Docker</span>
+          <span class="skill-node">AWS</span>
+          <span class="skill-node">Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="section" id="contact">
+    <div class="section-header reveal">
+      <span class="section-label">// Contact</span>
+      <h2 class="section-title">Let's Build Something Intelligent</h2>
+      <p class="section-subtitle">Open to collaborations, freelance work, and exciting opportunities</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="contact-content reveal">
+      <div class="contact-links">
+        <a href="mailto:khush@example.com" class="contact-link" id="contactEmail">
+          <span class="contact-icon">📧</span>
+          <span class="contact-label">Email</span>
+        </a>
+        <a href="https://github.com/Khusavant" target="_blank" class="contact-link" id="contactGithub">
+          <span class="contact-icon">💻</span>
+          <span class="contact-label">GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/khush" target="_blank" class="contact-link" id="contactLinkedin">
+          <span class="contact-icon">🔗</span>
+          <span class="contact-label">LinkedIn</span>
+        </a>
+        <a href="https://twitter.com/khush" target="_blank" class="contact-link" id="contactTwitter">
+          <span class="contact-icon">🐦</span>
+          <span class="contact-label">Twitter</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <p>Built with ❤️ and AI by <span class="gradient-text">Khush</span> · © 2026</p>
+  </footer>
+
+  <!-- ═══════════ CHATBOT ═══════════ -->
+  <div class="ai-overlay" id="aiOverlay"></div>
+
+  <div class="context-hint" id="contextHint"></div>
+
+  <button class="chat-toggle" id="chatToggle" aria-label="Open AI Assistant">🤖</button>
+
+  <div class="chatbot-panel" id="chatbotPanel">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">🤖</div>
+        <div class="chat-header-text">
+          <h4>KhushAI</h4>
+          <span>● Online</span>
+        </div>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Close chat">✕</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <div class="chat-input-area">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything..." autocomplete="off">
+      <button class="chat-send" id="chatSend" aria-label="Send message">➤</button>
+    </div>
+  </div>
+
+  <!-- ═══════════ SCRIPTS ═══════════ -->
+  <script src="js/slider.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

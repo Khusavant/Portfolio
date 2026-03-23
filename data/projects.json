@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "My Professional Server",
+    "description": "A professional portfolio server built with Node.js and Express, featuring a polished frontend served via a custom backend with clean HTML, CSS, and JavaScript architecture.",
+    "techStack": ["Node.js", "Express", "HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Khusavant/my-professional-server",
+    "demo": "#",
+    "icon": "🖥️",
+    "preview": "",
+    "simpleExplanation": "Think of this as a digital business card that lives on the internet. It's a personal website that runs on its own server — like having your own little piece of the web. When someone visits the site, the server sends them a beautifully designed page showing off work and skills.",
+    "technicalExplanation": "A Node.js + Express backend serving static assets with middleware for routing, CORS, and error handling. The architecture separates the presentation layer (HTML/CSS/JS) from the server logic, with a clean MVC-inspired structure. Express handles HTTP requests and serves the frontend through static file middleware."
+  },
+  {
+    "id": 2,
+    "title": "Sulla Vista Project",
+    "description": "A beautifully crafted static website project built with modern HTML5 and CSS3 — showcasing responsive design, clean layout structure, and visual aesthetics.",
+    "techStack": ["HTML", "CSS"],
+    "github": "https://github.com/Khusavant/Sulla-Vista-Project",
+    "demo": "#",
+    "icon": "🌐",
+    "preview": "https://htmlpreview.github.io/?https://github.com/Khusavant/Sulla-Vista-Project/blob/main/index.html",
+    "simpleExplanation": "A visually stunning website built from scratch using just HTML and CSS. It demonstrates how you can create beautiful, responsive pages without any fancy frameworks — just clean code and creative design that adapts to any screen size.",
+    "technicalExplanation": "Pure HTML5/CSS3 static site demonstrating semantic markup, CSS Grid/Flexbox layouts, responsive breakpoints via media queries, and CSS custom properties for theming. Zero JavaScript dependencies — the entire visual experience is powered by CSS transitions and transforms."
+  },
+  {
+    "id": 3,
+    "title": "GitMore",
+    "description": "A lightweight GitHub-themed web project designed to explore and demonstrate core HTML fundamentals with a clean, minimal interface.",
+    "techStack": ["HTML"],
+    "github": "https://github.com/Khusavant/GitMore",
+    "demo": "#",
+    "icon": "🔗",
+    "preview": "https://htmlpreview.github.io/?https://github.com/Khusavant/GitMore/blob/main/index.html",
+    "simpleExplanation": "A clean, minimal website inspired by GitHub's design. It's a learning project that shows how web pages are structured — think of it as understanding the skeleton of any website you see online.",
+    "technicalExplanation": "A pure HTML project focusing on semantic document structure, accessibility attributes, and proper element hierarchy. Demonstrates form elements, navigation patterns, and content organization following W3C standards — no CSS framework, just foundational markup."
+  },
+  {
+    "id": 4,
+    "title": "Laundry Wallah",
+    "description": "A mini-project for a laundry service platform — a clean single-page web application built with HTML to streamline laundry order management.",
+    "techStack": ["HTML"],
+    "github": "https://github.com/Khusavant/Mini-Project",
+    "demo": "#",
+    "icon": "🧺",
+    "preview": "https://htmlpreview.github.io/?https://github.com/Khusavant/Mini-Project/blob/main/index.htm",
+    "simpleExplanation": "An app concept for a laundry service — like an Uber for laundry! Users can view services, check pricing, and place orders. It shows how real businesses turn ideas into digital platforms that customers can interact with.",
+    "technicalExplanation": "A single-page application concept for a service marketplace. Features form-based order management, service catalog layout, and structured content hierarchy. Demonstrates practical application of HTML forms, tables, and semantic sectioning for a business use case."
+  },
+  {
+    "id": 5,
+    "title": "JavaScript Pro",
+    "description": "An interactive JavaScript-heavy web application showcasing advanced JS concepts with styled UI components, DOM manipulation, and dynamic behavior.",
+    "techStack": ["JavaScript", "CSS", "HTML"],
+    "github": "https://github.com/Khusavant/JavaScript-Pro",
+    "demo": "#",
+    "icon": "⚡",
+    "preview": "https://htmlpreview.github.io/?https://github.com/Khusavant/JavaScript-Pro/blob/main/index.html",
+    "simpleExplanation": "An interactive showcase that brings web pages to life with JavaScript. Click buttons, see animations, watch content change in real-time — it demonstrates the magic that makes modern websites feel dynamic and responsive to your actions.",
+    "technicalExplanation": "Advanced JavaScript project demonstrating DOM manipulation, event delegation, closures, async/await patterns, and ES6+ features. Uses vanilla JS for state management, dynamic UI rendering, and complex event handling without any framework dependencies."
+  },
+  {
+    "id": 6,
+    "title": "Project Coe",
+    "description": "A multi-page festive-themed website featuring event pages, registration forms, and styled layouts — built with HTML and CSS with cultural design elements.",
+    "techStack": ["HTML", "CSS"],
+    "github": "https://github.com/Khusavant/Project-Coe",
+    "demo": "#",
+    "icon": "🎨",
+    "preview": "https://htmlpreview.github.io/?https://github.com/Khusavant/Project-Coe/blob/main/index.html",
+    "simpleExplanation": "A festive event website with multiple pages — event schedules, registration forms, and beautiful cultural designs. It's like building a complete digital brochure for an event, where visitors can explore and sign up.",
+    "technicalExplanation": "Multi-page static site with cross-page navigation, CSS-powered layout systems, registration forms with validation attributes, and cultural design elements. Demonstrates multi-file project architecture, consistent theming across pages, and form UX patterns."
+  },
+  {
+    "id": 7,
+    "title": "Node Simple Server",
+    "description": "A simple and clean Node.js server project demonstrating server-side JavaScript, static file serving, and backend fundamentals with Express.",
+    "techStack": ["Node.js", "JavaScript", "HTML", "CSS"],
+    "github": "https://github.com/Khusavant/node-simple-server",
+    "demo": "#",
+    "icon": "🚀",
+    "preview": "",
+    "simpleExplanation": "The engine behind websites — this is the invisible part that powers what you see. When you visit a website, a server like this receives your request and sends back the page. This project shows how that whole process works behind the scenes.",
+    "technicalExplanation": "Minimal Node.js HTTP server demonstrating the request-response cycle, static file serving, route handling, and middleware patterns. Built with core Node.js modules and Express, showcasing RESTful principles and server-side rendering fundamentals."
+  },
+  {
+    "id": 8,
+    "title": "React Assignment",
+    "description": "A React.js single-page application built with Create React App — demonstrating component-based architecture, state management, and modern frontend development.",
+    "techStack": ["React", "JavaScript", "CSS", "HTML"],
+    "github": "https://github.com/Khusavant/Assignment--5",
+    "demo": "#",
+    "icon": "⚛️",
+    "preview": "",
+    "simpleExplanation": "A modern web app built with React — the same technology used by Instagram and Netflix. Instead of loading new pages, everything updates smoothly in real-time. Components work together like LEGO blocks to create a seamless experience.",
+    "technicalExplanation": "React SPA bootstrapped with Create React App. Implements component-based architecture with functional components, useState/useEffect hooks, prop drilling, and conditional rendering. Uses JSX templating, CSS modules for scoped styling, and React's virtual DOM for efficient re-renders."
+  }
+]

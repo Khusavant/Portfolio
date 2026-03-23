@@ -1,0 +1,110 @@
+{
+  "botName": "KhushAI",
+  "greeting": "Hey there! 👋 I'm KhushAI, Khush's personal AI assistant. Ask me anything about his skills, projects, or experience!",
+  "fallback": "Hmm, I'm not sure about that. Try asking about Khush's projects, skills, education, or how to get in touch!",
+  "contextHints": {
+    "hero": "👋 Welcome! Explore my projects or ask me anything",
+    "about": "💡 Curious about my background? Ask me about my experience",
+    "projects": "🔥 These are my real GitHub projects. Ask for details!",
+    "skills": "🛠️ Want to know more about my tech stack? Just ask!",
+    "contact": "🤝 Let's collaborate! Ask how to get in touch"
+  },
+  "aiSummary": "Khusavant is a Computer Science student specializing in **AI & Machine Learning** who builds intelligent, production-ready applications. His core stack includes **Python, TensorFlow, and PyTorch** for AI/ML, and **Node.js, React, and Flask** for full-stack development. From portfolio servers to service platforms, his projects demonstrate end-to-end engineering — from backend architecture to polished frontends. He brings **research-driven thinking** to real-world code.",
+  "idlePrompts": [
+    "✨ Need help navigating? Just ask!",
+    "🎯 Try asking about Khush's latest projects",
+    "💡 I can give you a quick summary of Khush's skills",
+    "🔍 Curious about a specific technology? Ask away!",
+    "🚀 Want to see what Khush has built? Say 'show projects'"
+  ],
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "what's up", "greetings", "good morning", "good evening"],
+      "response": "Hello! 👋 I'm KhushAI. I can tell you about Khush's projects, skills, education, and more. What would you like to know?"
+    },
+    {
+      "tag": "who",
+      "patterns": ["who are you", "who is khush", "who is khusavant", "who is khushvant", "tell me about yourself", "about", "introduce", "who made you"],
+      "response": "Khusavant (often called Khush) is a Computer Science student specializing in **Artificial Intelligence**. He builds intelligent web applications and AI-powered tools. He's passionate about solving real-world problems using machine learning, NLP, and computer vision. 🚀"
+    },
+    {
+      "tag": "projects",
+      "patterns": ["projects", "what have you built", "show me your work", "portfolio", "show projects", "your work"],
+      "response": "🔥 Here are Khush's GitHub projects:\n• **My Professional Server** — Node.js + Express portfolio server\n• **Sulla Vista Project** — Responsive static website with HTML & CSS\n• **GitMore** — GitHub-themed web project\n• **Laundry Wallah** — Laundry service mini-project\n• **JavaScript Pro** — Advanced JS concepts showcase\n• **Project Coe** — Multi-page festive themed website\n• **Node Simple Server** — Backend fundamentals with Node.js\n• **React Assignment** — React SPA with Create React App\n\nWant details on any specific project?",
+      "action": "navigate",
+      "target": "projects"
+    },
+    {
+      "tag": "skills",
+      "patterns": ["skills", "technologies", "tech stack", "what do you use", "what technologies", "programming languages", "tools"],
+      "response": "💻 **Languages:** Python, JavaScript, C++, SQL\n🤖 **AI/ML:** TensorFlow, PyTorch, scikit-learn, OpenCV\n📝 **NLP:** spaCy, NLTK, Transformers, BERT\n🌐 **Web:** HTML, CSS, JavaScript, Flask, FastAPI\n🛠️ **Tools:** Git, Docker, Linux, VS Code\n☁️ **Cloud:** AWS, Google Cloud, Firebase",
+      "action": "navigate",
+      "target": "skills"
+    },
+    {
+      "tag": "education",
+      "patterns": ["education", "degree", "university", "college", "study", "qualification", "where did you study"],
+      "response": "🎓 Khush is pursuing a **B.Tech in Computer Science** with a specialization in **Artificial Intelligence & Machine Learning**. He's focused on deep learning, NLP, and computer vision research."
+    },
+    {
+      "tag": "contact",
+      "patterns": ["contact", "email", "reach", "hire", "connect", "social media", "linkedin", "github", "contact you", "get in touch"],
+      "response": "📬 You can reach Khush at:\n• **GitHub:** github.com/Khusavant\n\nHe's always open to exciting collaborations and opportunities!",
+      "action": "navigate",
+      "target": "contact"
+    },
+    {
+      "tag": "experience",
+      "patterns": ["experience", "work", "internship", "job", "career", "resume"],
+      "response": "💼 Khush has experience in:\n• Building **AI/ML models** for real-world applications\n• Developing **full-stack web apps** with AI integration\n• Contributing to **open-source** AI projects\n• **Hackathon** participation and mentoring\n\nHe's always looking for new challenges in the AI space!"
+    },
+    {
+      "tag": "fun",
+      "patterns": ["fun fact", "hobby", "hobbies", "interests", "what do you like", "free time"],
+      "response": "🎮 When not coding, Khush enjoys:\n• Exploring new AI research papers\n• Building side projects and prototypes\n• Gaming and digital art\n• Contributing to tech communities\n\nHe believes the best learning happens through building!"
+    },
+    {
+      "tag": "navigate_projects",
+      "patterns": ["show my projects", "go to projects", "take me to projects", "scroll to projects", "see projects", "view projects"],
+      "response": "📂 Scrolling to the Projects section...",
+      "action": "navigate",
+      "target": "projects"
+    },
+    {
+      "tag": "navigate_skills",
+      "patterns": ["go to skills", "show skills", "take me to skills", "scroll to skills", "see skills", "view skills"],
+      "response": "🛠️ Scrolling to the Skills section...",
+      "action": "navigate",
+      "target": "skills"
+    },
+    {
+      "tag": "navigate_contact",
+      "patterns": ["go to contact", "show contact", "take me to contact", "scroll to contact", "contact section", "how to reach"],
+      "response": "📬 Scrolling to the Contact section...",
+      "action": "navigate",
+      "target": "contact"
+    },
+    {
+      "tag": "navigate_about",
+      "patterns": ["go to about", "show about", "take me to about", "scroll to about", "about section", "tell me about"],
+      "response": "👤 Scrolling to the About section...",
+      "action": "navigate",
+      "target": "about"
+    },
+    {
+      "tag": "navigate_top",
+      "patterns": ["go to top", "scroll up", "home", "go home", "back to top", "start"],
+      "response": "⬆️ Going back to the top...",
+      "action": "navigate",
+      "target": "hero"
+    },
+    {
+      "tag": "summary",
+      "patterns": ["summary", "ai summary", "quick summary", "professional summary", "summarize", "overview", "who is this developer"],
+      "response": "📋 **Professional Summary:**\n\nKhush is a CS student specializing in AI & ML who builds intelligent, production-ready applications. Core stack: **Python, TensorFlow, PyTorch** for AI/ML and **Node.js, React, Flask** for full-stack development. From portfolio servers to service platforms, his projects demonstrate end-to-end engineering. He brings research-driven thinking to real-world code.",
+      "action": "navigate",
+      "target": "ai-summary"
+    }
+  ]
+}
