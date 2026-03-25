@@ -3,297 +3,359 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Khusavant — AI-focused developer building intelligent web applications. Explore projects in machine learning, NLP, and computer vision.">
-  <title>Khusavant | AI Developer Portfolio</title>
+
+  <!-- SEO: Primary Meta Tags -->
+  <title>Khusavant Choudhary | AI Developer Portfolio – Machine Learning & Intelligent Web Applications</title>
+  <meta name="description" content="Khusavant Choudhary is an AI-focused developer building intelligent web applications with machine learning, NLP, and computer vision. Explore projects, skills, and experience.">
+  <meta name="keywords" content="AI developer, machine learning portfolio, AI web developer, intelligent applications, NLP developer, computer vision projects, Python developer, full-stack AI, Khusavant Choudhary">
+  <meta name="author" content="Khusavant Choudhary">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f1117">
+
+  <!-- SEO: Canonical URL -->
+  <link rel="canonical" href="https://khusavant.github.io/Portfolio/">
+
+  <!-- SEO: Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khusavant.github.io/Portfolio/">
+  <meta property="og:title" content="Khusavant Choudhary | AI Developer Portfolio">
+  <meta property="og:description" content="AI-focused developer crafting intelligent web applications with machine learning, NLP, and computer vision. View projects and get in touch.">
+  <meta property="og:image" content="https://khusavant.github.io/Portfolio/assets/og-preview.png">
+  <meta property="og:site_name" content="Khusavant Choudhary Portfolio">
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Khusavant Choudhary | AI Developer Portfolio">
+  <meta name="twitter:description" content="AI-focused developer crafting intelligent web applications with machine learning, NLP, and computer vision.">
+  <meta name="twitter:image" content="https://khusavant.github.io/Portfolio/assets/og-preview.png">
+
+  <!-- SEO: Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Khusavant Choudhary",
+    "url": "https://khusavant.github.io/Portfolio/",
+    "jobTitle": "AI Developer & Machine Learning Engineer",
+    "description": "Computer Science student specializing in Artificial Intelligence, building intelligent web applications with Python, TensorFlow, PyTorch, and modern web technologies.",
+    "email": "Khushavant1409@gmail.com",
+    "sameAs": [
+      "https://github.com/Khusavant",
+      "https://www.linkedin.com/in/khusavant-choudhary-546b48369/"
+    ],
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Natural Language Processing", "Computer Vision", "Python", "TensorFlow", "PyTorch", "React", "Node.js", "Full-Stack Development"],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Computer Science Program"
+    }
+  }
+  </script>
+
+  <!-- Assets -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+
+  <!-- Performance: Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
 
   <!-- ═══════════ NAVBAR ═══════════ -->
-  <nav class="navbar" id="navbar">
-    <a href="#" class="nav-logo">Khusavant<span class="logo-dot">.</span></a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <a href="#" class="nav-logo" aria-label="Khusavant - Home">Khusavant<span class="logo-dot">.</span></a>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-    <div class="mode-toggle" id="modeToggle">
-      <button class="mode-btn active" id="manualBtn" data-mode="manual">⚡ Manual</button>
-      <button class="mode-btn" id="aiBtn" data-mode="ai">🤖 AI Mode</button>
-      <div class="mode-toggle-slider" id="modeSlider"></div>
-    </div>
-
-    <div class="nav-hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-
-  <!-- ═══════════ HERO ═══════════ -->
-  <section class="hero" id="hero">
-    <div class="hero-glow"></div>
-    <div class="hero-particles" id="heroParticles"></div>
-
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="pulse-dot"></span>
-        Available for opportunities
+      <div class="mode-toggle" id="modeToggle">
+        <button class="mode-btn active" id="manualBtn" data-mode="manual">⚡ Manual</button>
+        <button class="mode-btn" id="aiBtn" data-mode="ai">🤖 AI Mode</button>
+        <div class="mode-toggle-slider" id="modeSlider"></div>
       </div>
 
-      <h1 class="hero-title">
-        Hi, I'm <span class="gradient-text">Khusavant</span><br>
-        I Build <span class="gradient-text">AI Systems</span>
-      </h1>
-
-      <p class="hero-subtitle">
-        Computer Science student specializing in Artificial Intelligence.
-        I craft intelligent web applications that solve real-world problems
-        using machine learning, NLP, and computer vision.
-      </p>
-
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">Explore Work</a>
-        <button class="btn btn-outline" id="heroTalkBtn">Talk to AI</button>
+      <div class="nav-hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </div>
+    </nav>
+  </header>
 
-    <div class="scroll-indicator">
-      <div class="scroll-mouse"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
+  <main>
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero-glow"></div>
+      <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
 
-  <!-- ═══════════ ABOUT ═══════════ -->
-  <section class="section" id="about">
-    <div class="section-header reveal">
-      <span class="section-label">About Me</span>
-      <h2 class="section-title">Who I Am</h2>
-      <div class="section-divider"></div>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-image-wrapper reveal">
-        <div class="about-image" id="aboutImage" style="background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(139,92,246,0.08)); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-          🧑‍💻
+      <div class="hero-content">
+        <div class="hero-badge" aria-label="Status">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Available for opportunities
         </div>
-      </div>
 
-      <div class="about-text reveal">
-        <h3>An AI-Focused Developer Who Builds <span class="gradient-text">Intelligent Applications</span></h3>
-        <p>
-          I'm a Computer Science student with a deep passion for Artificial Intelligence
-          and Machine Learning. I specialize in building systems that think, learn, and adapt —
-          from natural language processing pipelines to computer vision models.
-        </p>
-        <p>
-          My approach combines strong engineering principles with cutting-edge AI research
-          to create practical applications that make a real impact. I believe in writing
-          clean, modular code and building systems that are both intelligent and reliable.
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Khusavant</span><br>
+          I Build <span class="gradient-text">AI-Powered Systems</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Computer Science student specializing in Artificial Intelligence and Machine Learning.
+          I craft intelligent web applications that solve real-world problems
+          using deep learning, natural language processing, and computer vision.
         </p>
 
-        <div class="about-stats">
-          <div class="stat-item">
-            <div class="stat-number">8+</div>
-            <div class="stat-label">Projects</div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Explore My Work</a>
+          <button class="btn btn-outline" id="heroTalkBtn">Talk to AI Assistant</button>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-mouse"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="section" id="about" aria-label="About Khusavant Choudhary">
+      <div class="section-header reveal">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">AI Developer & Machine Learning Enthusiast</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image" id="aboutImage" role="img" aria-label="Khusavant Choudhary - AI Developer" style="background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(139,92,246,0.08)); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+            🧑‍💻
           </div>
-          <div class="stat-item">
-            <div class="stat-number">6+</div>
-            <div class="stat-label">AI Models</div>
+        </div>
+
+        <div class="about-text reveal" itemprop="description">
+          <h3>Building <span class="gradient-text">Intelligent Applications</span> with AI & Machine Learning</h3>
+          <p>
+            I'm Khusavant Choudhary, a Computer Science student with a deep passion for Artificial Intelligence
+            and Machine Learning. I specialize in designing and building systems that think, learn, and adapt —
+            from natural language processing pipelines and chatbot systems to computer vision models
+            and AI-powered web applications.
+          </p>
+          <p>
+            My engineering approach combines cutting-edge AI research with clean, production-ready code.
+            I work across the full stack — training models with Python, TensorFlow, and PyTorch on the backend,
+            and building responsive interfaces with React, Node.js, and modern JavaScript on the frontend.
+            Every project I build is designed to solve real-world problems intelligently.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">8+</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">6+</div>
+              <div class="stat-label">AI Models Trained</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Years of Coding</div>
+            </div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number">3+</div>
-            <div class="stat-label">Years Coding</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ AI SUMMARY ═══════════ -->
+    <section class="section" id="ai-summary" aria-label="AI-Generated Professional Summary">
+      <div class="section-header reveal">
+        <span class="section-label">AI Generated</span>
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="section-subtitle">A quick overview powered by KhushAI</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ai-summary-card reveal">
+        <div class="summary-terminal-bar" aria-hidden="true">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">khushai --summary</span>
+        </div>
+        <div class="summary-body">
+          <span class="summary-prompt" aria-hidden="true">$</span>
+          <span class="summary-text" id="summaryText"></span>
+          <span class="summary-cursor" aria-hidden="true">|</span>
+        </div>
+      </div>
+
+      <!-- SEO: Visually hidden summary text for crawlers (typewriter content is JS-rendered) -->
+      <noscript>
+        <p>Khusavant is a Computer Science student specializing in AI and Machine Learning who builds intelligent, production-ready applications. His core stack includes Python, TensorFlow, and PyTorch for AI/ML, and Node.js, React, and Flask for full-stack development.</p>
+      </noscript>
+    </section>
+
+    <!-- ═══════════ PROJECTS (SLIDER) ═══════════ -->
+    <section class="section projects-section" id="projects" aria-label="Machine Learning and AI Projects Portfolio">
+      <div class="section-header reveal">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Featured Projects & AI Applications</h2>
+        <p class="section-subtitle">A curated showcase of intelligent systems, full-stack applications, and AI-powered tools</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="slider-container reveal">
+        <button class="slider-arrow prev" id="sliderPrev" aria-label="Previous project">‹</button>
+        <div class="slider-track" id="sliderTrack" role="list" aria-label="Project cards">
+          <!-- Cards injected by slider.js -->
+        </div>
+        <button class="slider-arrow next" id="sliderNext" aria-label="Next project">›</button>
+        <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Project navigation"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ SKILLS ═══════════ -->
+    <section class="section" id="skills" aria-label="Technical Skills and Expertise">
+      <div class="section-header reveal">
+        <span class="section-label">Tech Stack</span>
+        <h2 class="section-title">Skills & Technical Expertise</h2>
+        <p class="section-subtitle">Technologies and frameworks I use to build intelligent applications</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skill-map reveal" role="list" aria-label="Skill categories">
+        <!-- Cluster: AI/ML -->
+        <div class="skill-cluster" data-cluster="ai" role="listitem">
+          <div class="cluster-header">
+            <span class="cluster-icon" aria-hidden="true">🤖</span>
+            <h3 class="cluster-title">Artificial Intelligence & Machine Learning</h3>
+          </div>
+          <div class="cluster-nodes">
+            <span class="skill-node">TensorFlow</span>
+            <span class="skill-node">PyTorch</span>
+            <span class="skill-node">scikit-learn</span>
+            <span class="skill-node">OpenCV</span>
+          </div>
+        </div>
+
+        <!-- Center Node -->
+        <div class="skill-center" aria-hidden="true">
+          <div class="center-ring"></div>
+          <div class="center-label">Khusavant</div>
+          <div class="center-sub">Full-Stack AI Developer</div>
+        </div>
+
+        <!-- Cluster: Languages -->
+        <div class="skill-cluster" data-cluster="lang" role="listitem">
+          <div class="cluster-header">
+            <span class="cluster-icon" aria-hidden="true">💻</span>
+            <h3 class="cluster-title">Programming Languages</h3>
+          </div>
+          <div class="cluster-nodes">
+            <span class="skill-node">Python</span>
+            <span class="skill-node">JavaScript</span>
+            <span class="skill-node">C++</span>
+            <span class="skill-node">SQL</span>
+          </div>
+        </div>
+
+        <!-- Cluster: Web -->
+        <div class="skill-cluster" data-cluster="web" role="listitem">
+          <div class="cluster-header">
+            <span class="cluster-icon" aria-hidden="true">🌐</span>
+            <h3 class="cluster-title">Web Development Frameworks</h3>
+          </div>
+          <div class="cluster-nodes">
+            <span class="skill-node">Flask</span>
+            <span class="skill-node">FastAPI</span>
+            <span class="skill-node">React</span>
+            <span class="skill-node">Node.js</span>
+          </div>
+        </div>
+
+        <!-- Cluster: Tools -->
+        <div class="skill-cluster" data-cluster="tools" role="listitem">
+          <div class="cluster-header">
+            <span class="cluster-icon" aria-hidden="true">🛠️</span>
+            <h3 class="cluster-title">DevOps & Developer Tools</h3>
+          </div>
+          <div class="cluster-nodes">
+            <span class="skill-node">Git</span>
+            <span class="skill-node">Docker</span>
+            <span class="skill-node">AWS</span>
+            <span class="skill-node">Linux</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════ AI SUMMARY ═══════════ -->
-  <section class="section" id="ai-summary">
-    <div class="section-header reveal">
-      <span class="section-label">AI Generated</span>
-      <h2 class="section-title">Professional Summary</h2>
-      <p class="section-subtitle">A quick overview powered by KhushAI</p>
-      <div class="section-divider"></div>
-    </div>
-
-    <div class="ai-summary-card reveal">
-      <div class="summary-terminal-bar">
-        <span class="terminal-dot red"></span>
-        <span class="terminal-dot yellow"></span>
-        <span class="terminal-dot green"></span>
-        <span class="terminal-title">khushai --summary</span>
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section class="section" id="contact" aria-label="Contact Khusavant Choudhary">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Build Something Intelligent Together</h2>
+        <p class="section-subtitle">Open to AI collaborations, freelance projects, and full-time opportunities</p>
+        <div class="section-divider"></div>
       </div>
-      <div class="summary-body">
-        <span class="summary-prompt">$</span>
-        <span class="summary-text" id="summaryText"></span>
-        <span class="summary-cursor">|</span>
-      </div>
-    </div>
-  </section>
 
-  <!-- ═══════════ PROJECTS (SLIDER) ═══════════ -->
-  <section class="section projects-section" id="projects">
-    <div class="section-header reveal">
-      <span class="section-label">Portfolio</span>
-      <h2 class="section-title">Selected Work</h2>
-      <p class="section-subtitle">A showcase of intelligent systems and AI-powered applications</p>
-      <div class="section-divider"></div>
-    </div>
-
-    <div class="slider-container reveal">
-      <button class="slider-arrow prev" id="sliderPrev" aria-label="Previous project">‹</button>
-      <div class="slider-track" id="sliderTrack">
-        <!-- Cards injected by slider.js -->
-      </div>
-      <button class="slider-arrow next" id="sliderNext" aria-label="Next project">›</button>
-      <div class="slider-dots" id="sliderDots"></div>
-    </div>
-  </section>
-
-  <!-- ═══════════ SKILLS ═══════════ -->
-  <section class="section" id="skills">
-    <div class="section-header reveal">
-      <span class="section-label">Tech Stack</span>
-      <h2 class="section-title">Skills & Expertise</h2>
-      <p class="section-subtitle">Technologies I use to bring ideas to life</p>
-      <div class="section-divider"></div>
-    </div>
-
-    <div class="skill-map reveal">
-      <!-- Cluster: AI/ML -->
-      <div class="skill-cluster" data-cluster="ai">
-        <div class="cluster-header">
-          <span class="cluster-icon">🤖</span>
-          <h3 class="cluster-title">AI / ML</h3>
-        </div>
-        <div class="cluster-nodes">
-          <span class="skill-node">TensorFlow</span>
-          <span class="skill-node">PyTorch</span>
-          <span class="skill-node">scikit-learn</span>
-          <span class="skill-node">OpenCV</span>
+      <div class="contact-content reveal">
+        <div class="contact-links">
+          <a href="mailto:Khushavant1409@gmail.com" class="contact-link" id="contactEmail" aria-label="Send email to Khusavant Choudhary">
+            <span class="contact-icon" aria-hidden="true">📧</span>
+            <span class="contact-label">Email Me</span>
+          </a>
+          <a href="https://github.com/Khusavant" target="_blank" rel="noopener noreferrer" class="contact-link" id="contactGithub" aria-label="View Khusavant's GitHub profile">
+            <span class="contact-icon" aria-hidden="true">💻</span>
+            <span class="contact-label">GitHub Profile</span>
+          </a>
+          <a href="https://www.linkedin.com/in/khusavant-choudhary-546b48369/" target="_blank" rel="noopener noreferrer" class="contact-link" id="contactLinkedin" aria-label="Connect with Khusavant on LinkedIn">
+            <span class="contact-icon" aria-hidden="true">🔗</span>
+            <span class="contact-label">LinkedIn Profile</span>
+          </a>
         </div>
       </div>
-
-      <!-- Center Node -->
-      <div class="skill-center">
-        <div class="center-ring"></div>
-        <div class="center-label">Khusavant</div>
-        <div class="center-sub">Full-Stack AI Developer</div>
-      </div>
-
-      <!-- Cluster: Languages -->
-      <div class="skill-cluster" data-cluster="lang">
-        <div class="cluster-header">
-          <span class="cluster-icon">💻</span>
-          <h3 class="cluster-title">Languages</h3>
-        </div>
-        <div class="cluster-nodes">
-          <span class="skill-node">Python</span>
-          <span class="skill-node">JavaScript</span>
-          <span class="skill-node">C++</span>
-          <span class="skill-node">SQL</span>
-        </div>
-      </div>
-
-      <!-- Cluster: Web -->
-      <div class="skill-cluster" data-cluster="web">
-        <div class="cluster-header">
-          <span class="cluster-icon">🌐</span>
-          <h3 class="cluster-title">Web</h3>
-        </div>
-        <div class="cluster-nodes">
-          <span class="skill-node">Flask</span>
-          <span class="skill-node">FastAPI</span>
-          <span class="skill-node">React</span>
-          <span class="skill-node">Node.js</span>
-        </div>
-      </div>
-
-      <!-- Cluster: Tools -->
-      <div class="skill-cluster" data-cluster="tools">
-        <div class="cluster-header">
-          <span class="cluster-icon">🛠️</span>
-          <h3 class="cluster-title">DevOps & Tools</h3>
-        </div>
-        <div class="cluster-nodes">
-          <span class="skill-node">Git</span>
-          <span class="skill-node">Docker</span>
-          <span class="skill-node">AWS</span>
-          <span class="skill-node">Linux</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════ CONTACT ═══════════ -->
-  <section class="section" id="contact">
-    <div class="section-header reveal">
-      <span class="section-label">Contact</span>
-      <h2 class="section-title">Let's Build Something Intelligent</h2>
-      <p class="section-subtitle">Open to collaborations, freelance work, and exciting opportunities</p>
-      <div class="section-divider"></div>
-    </div>
-
-    <div class="contact-content reveal">
-      <div class="contact-links">
-        <a href="mailto:Khushavant1409@gmail.com" class="contact-link" id="contactEmail">
-          <span class="contact-icon">📧</span>
-          <span class="contact-label">Email</span>
-        </a>
-        <a href="https://github.com/Khusavant" target="_blank" class="contact-link" id="contactGithub">
-          <span class="contact-icon">💻</span>
-          <span class="contact-label">GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/khusavant-choudhary-546b48369/" target="_blank" class="contact-link" id="contactLinkedin">
-          <span class="contact-icon">🔗</span>
-          <span class="contact-label">LinkedIn</span>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- ═══════════ FOOTER ═══════════ -->
-  <footer class="footer">
-    <p>Built with ❤️ and AI by <span class="gradient-text">Khusavant</span> · © 2026</p>
+  <footer class="footer" role="contentinfo">
+    <p>Designed & built with AI by <span class="gradient-text">Khusavant Choudhary</span> · © 2026</p>
   </footer>
 
   <!-- ═══════════ CHATBOT ═══════════ -->
   <div class="ai-overlay" id="aiOverlay"></div>
 
-  <div class="context-hint" id="contextHint"></div>
+  <div class="context-hint" id="contextHint" role="tooltip"></div>
 
-  <button class="chat-toggle" id="chatToggle" aria-label="Open AI Assistant">🤖</button>
+  <button class="chat-toggle" id="chatToggle" aria-label="Open KhushAI Assistant">🤖</button>
 
-  <div class="chatbot-panel" id="chatbotPanel">
+  <div class="chatbot-panel" id="chatbotPanel" role="dialog" aria-label="KhushAI Assistant">
     <div class="chat-header">
       <div class="chat-header-info">
-        <div class="chat-avatar">🤖</div>
+        <div class="chat-avatar" aria-hidden="true">🤖</div>
         <div class="chat-header-text">
           <h4>KhushAI</h4>
           <span>● Online</span>
         </div>
       </div>
-      <button class="chat-close" id="chatClose" aria-label="Close chat">✕</button>
+      <button class="chat-close" id="chatClose" aria-label="Close AI assistant">✕</button>
     </div>
 
-    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-messages" id="chatMessages" role="log" aria-live="polite"></div>
 
     <div class="chat-input-area">
-      <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything..." autocomplete="off">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask about my AI projects, skills, or experience..." autocomplete="off" aria-label="Type a message">
       <button class="chat-send" id="chatSend" aria-label="Send message">➤</button>
     </div>
   </div>
 
   <!-- ═══════════ SCRIPTS ═══════════ -->
-  <script src="js/slider.js"></script>
-  <script src="js/chatbot.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/chatbot.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>
