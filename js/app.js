@@ -269,6 +269,9 @@
 
   // AI Summary typewriter
   setupTypewriter();
+
+  // Interaction system
+  Interactions.init();
   
   // Wire up Hero CTA "Talk to AI"
   const heroTalkBtn = document.getElementById('heroTalkBtn');
@@ -276,6 +279,6 @@
     heroTalkBtn.addEventListener('click', () => Chatbot.toggle());
   }
 
-  console.log('%c🤖 KhushAI Portfolio Loaded', 'color: #00f0ff; font-size: 14px; font-weight: bold;');
+  console.log('%c🤖 KhushAI Portfolio Loaded', 'color: #00d4ff; font-size: 14px; font-weight: bold;');
 
 })();

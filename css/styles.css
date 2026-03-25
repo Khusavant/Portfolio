@@ -1751,3 +1751,127 @@ button {
     flex: 0 0 260px;
   }
 }
+
+/* ═══════════════════════════════
+   15. INTERACTION SYSTEM
+   ═══════════════════════════════ */
+
+/* ── Cursor Glow ── */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  will-change: transform;
+}
+
+body:hover .cursor-glow {
+  opacity: 1;
+}
+
+.cursor-glow-active {
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.06) 0%, rgba(139, 92, 246, 0.02) 50%, transparent 70%);
+  opacity: 1 !important;
+}
+
+/* ── Tab Focus States ── */
+.tab-inactive .particle {
+  animation-play-state: paused !important;
+}
+
+.tab-inactive .hero-glow {
+  opacity: 0.3 !important;
+  transition: opacity 0.5s ease;
+}
+
+.tab-inactive .center-ring {
+  animation-play-state: paused !important;
+}
+
+.tab-focused .hero-glow {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* ── Welcome Back Pulse ── */
+.hero-glow.welcome-pulse {
+  animation: welcomePulse 2.5s ease-out;
+}
+
+@keyframes welcomePulse {
+  0% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  40% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* ── Engagement States ── */
+.engagement-low .hero-glow {
+  opacity: 0.5;
+}
+
+.engagement-medium .hero-glow {
+  opacity: 0.7;
+}
+
+.engagement-high .hero-glow {
+  opacity: 0.9;
+}
+
+.engagement-high .particle {
+  animation-duration: 7s !important;
+}
+
+.engagement-high .section-divider {
+  opacity: 0.8;
+}
+
+.engagement-high .project-card:hover {
+  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.25);
+}
+
+/* ── Element Entrance Stagger ── */
+.element-entrance {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.element-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Section In View ── */
+.section-in-view .section-divider {
+  width: 56px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Morph Intensity Variable ── */
+.hero-glow {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* ── Touch Device: Disable cursor effects ── */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-glow {
+    display: none !important;
+  }
+}
+
