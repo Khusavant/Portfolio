@@ -12,14 +12,14 @@
     const container = document.getElementById('heroParticles');
     if (!container) return;
 
-    const count = 50;
+    const count = 20;
     for (let i = 0; i < count; i++) {
       const p = document.createElement('div');
       p.className = 'particle';
       p.style.left = Math.random() * 100 + '%';
-      p.style.animationDuration = (5 + Math.random() * 8) + 's';
-      p.style.animationDelay = (Math.random() * 8) + 's';
-      p.style.width = p.style.height = (2 + Math.random() * 4) + 'px';
+      p.style.animationDuration = (7 + Math.random() * 10) + 's';
+      p.style.animationDelay = (Math.random() * 10) + 's';
+      p.style.width = p.style.height = (1.5 + Math.random() * 2.5) + 'px';
       container.appendChild(p);
     }
   }

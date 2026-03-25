@@ -50,7 +50,7 @@
     {
       "tag": "contact",
       "patterns": ["contact", "email", "reach", "hire", "connect", "social media", "linkedin", "github", "contact you", "get in touch"],
-      "response": "📬 You can reach Khush at:\n• **GitHub:** github.com/Khusavant\n\nHe's always open to exciting collaborations and opportunities!",
+      "response": "📬 You can reach Khusavant at:\n• **Email:** Khushavant1409@gmail.com\n• **GitHub:** github.com/Khusavant\n• **LinkedIn:** linkedin.com/in/khusavant-choudhary-546b48369\n\nHe's always open to exciting collaborations and opportunities!",
       "action": "navigate",
       "target": "contact"
     },
